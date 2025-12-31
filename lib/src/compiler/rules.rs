@@ -51,7 +51,7 @@ pub struct Rules {
     pub(in crate::compiler) lit_pool: BStringPool<LiteralId>,
 
     /// WASM module as in raw form.
-    pub(in crate::compiler) wasm_mod: Vec<u8>,
+    pub wasm_mod: Vec<u8>,
 
     /// WASM module already compiled into native code for the current platform.
     /// When the rules are serialized, the compiled module is included only if
